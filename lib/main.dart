@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:latihan_responsive/responsive/r_boxconstrain.dart';
+import 'package:latihan_responsive/adaptive/a_orientation.dart';
+// import 'package:latihan_responsive/responsive/r_boxconstrain.dart';
 // import 'package:latihan_responsive/responsive/m_query.dart';
-// import 'package:latihan_responsive/responsive/r_expanded.dart';
-import 'package:latihan_responsive/responsive/r_fitbox.dart';
-import 'package:latihan_responsive/responsive/r_wrap.dart';
+// // import 'package:latihan_responsive/responsive/r_expanded.dart';
+// import 'package:latihan_responsive/responsive/r_fitbox.dart';
+// import 'package:latihan_responsive/responsive/r_wrap.dart';
 
 void main() {
   runApp(MyApp());
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
     
     return MaterialApp(
     debugShowCheckedModeBanner: false,
-      home: LatihanBoxConstraint(),
+      home: LatihanOrientation(),
     );
   }
 }
