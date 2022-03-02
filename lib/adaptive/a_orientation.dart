@@ -7,21 +7,23 @@ class LatihanOrientation extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text("Latihan Orientation Builder"),
-      ),
-      body: Center(
-        child: (context.isPortrait) ? Container(
-          color: Colors.red,
-          width: 300,
-          height: 300,
-        ) :Container(
-          color: Colors.blue,
-          width: 300,
-          height: 150,
-        ) ,
-      ),
-    );
+    return OrientationBuilder(
+      builder: (context, orientation) {
+      if (orientation == Orientation.portrait) {
+        return Scaffold(
+          appBar: AppBar(
+            title: Text("latihan Orientation Builder"),
+          ),
+          body: Container(color: Colors.green, width: 300, height: 300,),
+        );
+      }else{
+        return Scaffold(
+          appBar: AppBar(
+            title: Text("Orientation Builder"),
+          ),
+          body: Container(color: Colors.red, width: 100, height: 300,),
+        );
+    }
+    });
   }
 }

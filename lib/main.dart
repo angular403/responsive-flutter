@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get_navigation/get_navigation.dart';
 import 'package:latihan_responsive/adaptive/a_orientation.dart';
 // import 'package:latihan_responsive/responsive/r_boxconstrain.dart';
 // import 'package:latihan_responsive/responsive/m_query.dart';
@@ -16,9 +17,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     
-    return MaterialApp(
+    return GetMaterialApp(
     debugShowCheckedModeBanner: false,
-      home: LatihanOrientation(),
+          home: LatihanOrientation(),
     );
   }
 }
